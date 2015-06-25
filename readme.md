@@ -1,1 +1,1 @@
-A port of PERL module powering xkpasswd.net/s/ password generator.
+Memorable password generator, inspired by a PERL module powering xkpasswd.net/s/
