@@ -1,0 +1,23 @@
+{
+  "name": "xkpasswd",
+  "version": "0.0.0",
+  "description": "A port of PERL module powering xkpasswd.net/s/ password generator.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vot/xkpasswd.js.git"
+  },
+  "author": "Vot Z <http://vot-z.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/vot/xkpasswd.js/issues"
+  },
+  "homepage": "https://github.com/vot/xkpasswd.js",
+  "dependencies": {
+    "lodash": "^3.9.3",
+    "random-words": "0.0.1"
+  }
+}
