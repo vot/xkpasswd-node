@@ -1,3 +1,4 @@
+#! /usr/local/bin/node
 var generate = require('./generate');
 
 var demo = function () {
