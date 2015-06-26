@@ -8,26 +8,28 @@ var opts = {
     maximum: 8,
     transformations: 'alternating'
   },
-  symbols: '!@$%^&*-_+=:|~?/.;',
+  symbols: '!@$%^&*-_+=:|~?.;',
   // padding: {
   //   digits: [2, 2],
   //   symbols: [2, 2]
   // },
-  pattern: '(word)(S)(word)(S)(D)(D)'
+  pattern: 'wSwSwSDD'
 };
 
+/**
+ * Patterns can consist of any combination of the following:
+ * w: words
+ * D: digits
+ * S: separators
+ */
+
 var generate = function (opts) {
-  var pattern = opts.pattern.match(/\((.*?)\)/g);
+  var pattern = opts.pattern.split('');
   var separator = opts.symbols.split('')[_.random(0, opts.symbols.length - 1)];
   var password = [];
 
-  var reqs = _.countBy(pattern, function (type) {
-    return _.trim(type, '()');
-  });
-
   _.forEach(pattern, function (type) {
     var value;
-    type = _.trim(type, '()');
 
     if (type === 'D') {
       value = _.random(0, 9);
@@ -37,7 +39,7 @@ var generate = function (opts) {
       value = separator;
     }
 
-    if (type === 'word') {
+    if (type === 'w') {
       value = randomWord();
     }
 
@@ -46,18 +48,19 @@ var generate = function (opts) {
 
   password = password.join('');
   // add padding here
-  console.log('Generating password. Complexity:', reqs);
-  console.log('Separator:', separator, '\n');
-  console.log('Password:', password, '\n');
 
   return password;
-}
+};
+
+
+var demo = function () {
+  var password = generate(opts);
+  //console.log('-- XKPasswd');
+  console.log('Password:', password);
+};
 
 
 
 
 
-
-
-console.log('-- XKPasswd');
-module.exports = generate(opts);
+module.exports = demo();
