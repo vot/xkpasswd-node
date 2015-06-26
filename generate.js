@@ -25,7 +25,7 @@ var defaults = {
 
 
 var generate = function (opts) {
-  var o = _.merge({}, opts, defaults);
+  var o = _.merge({}, defaults, opts);
   var pattern = o.pattern.split('');
   var separator = o.symbols.split('')[_.random(0, o.symbols.length - 1)];
   var password = [];
