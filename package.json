@@ -1,6 +1,6 @@
 {
   "name": "xkpasswd",
-  "version": "0.0.5",
+  "version": "0.0.6",
   "description": "Memorable password generator, inspired by a PERL module powering xkpasswd.net/s/",
   "main": "index.js",
   "bin": {
