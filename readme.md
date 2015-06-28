@@ -19,7 +19,8 @@ xkpasswd
 ```
 
 
-## Changelog
+## Issues and requests
 
-* Added bin and a separate CLI entry point
-* Moved generate.js to its own file
+Please log your issues at https://github.com/vot/xkpasswd.js/issues
+
+You can also just go ahead and add a feature yourself, simply create a pull request.
