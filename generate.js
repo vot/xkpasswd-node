@@ -35,6 +35,9 @@ var processOpts = function (opts) {
     defaultSeparators = '!@$%^&*-_+=:|~?.;';
   }
 
+  // Check if custom pattern is provided
+  if (opts.pattern) rtn.pattern = opts.pattern;
+
   // Pick a random separator from supplied list
   separators = (opts.separators || defaultSeparators);
   rtn.separator = separators.split('')[_.random(0, separators.length - 1)];

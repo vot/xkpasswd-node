@@ -49,6 +49,15 @@ $ xkp 4
 =join=industrial=wide=direction=lungs=16
 ```
 
+**EXAMPLE** Specify custom pattern
+
+```
+$ xkp -p wdwd
+
+adjective3solar6
+```
+
+
 **EXAMPLE** Specify complexity, custom separators and number of passwords
 
 ```
