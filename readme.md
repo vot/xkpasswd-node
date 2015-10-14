@@ -80,6 +80,7 @@ five#duck#blanket#21
 
 v0.0.7
 - replaced random-words module with a more custom solution using word-list-json module
+- cleaned up a bit and made code slightly more modular and extensible
 
 
 ## Issues and requests
