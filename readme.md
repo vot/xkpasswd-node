@@ -75,6 +75,13 @@ five#duck#blanket#21
 
 <br>
 
+
+## Release notes
+
+v0.0.7
+- replaced random-words module with a more custom solution using word-list-json module
+
+
 ## Issues and requests
 
 Please log your issues at https://github.com/vot/xkpasswd.js/issues
