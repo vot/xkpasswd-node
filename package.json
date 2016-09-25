@@ -1,7 +1,7 @@
 {
   "name": "xkpasswd",
-  "version": "0.0.7",
-  "description": "Memorable password generator, inspired by a PERL module powering xkpasswd.net/s/",
+  "version": "0.0.8",
+  "description": "Memorable password generator",
   "main": "index.js",
   "bin": {
     "xkp": "cli.js",
@@ -21,7 +21,7 @@
   },
   "homepage": "https://github.com/vot/xkpasswd.js",
   "dependencies": {
-    "nomnom": "^1.8.1",
+    "clarg": "0.0.2",
     "word-list-json": "^0.2.0"
   }
 }

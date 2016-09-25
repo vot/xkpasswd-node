@@ -3,8 +3,6 @@ var wordList = require('word-list-json');
 // define helpers
 var h = {
   random: function (min, max) {
-    // Returns a random integer between min (included) and max (included)
-    // https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
     return Math.floor(Math.random() * (max - min + 1)) + min;
   },
 
@@ -14,6 +12,7 @@ var h = {
 
   resolveComplexity: function (complexity) {
     // Patterns can consist of any combination of the following: (w)ords, (d)igits, (s)eparators
+    complexity = complexity || 3;
     var rtn = {};
     rtn.separators = '#.-=+';
     if (complexity < 1) complexity = 1;
@@ -39,12 +38,15 @@ var h = {
   },
 
   processOpts: function (opts) {
-    if (!opts.complexity) opts.complexity = 3;
-    var predefined = h.resolveComplexity(opts.complexity);
-    var separators = (opts.separators || predefined.separators);
     var rtn = {};
 
-    rtn.pattern = (opts.pattern || predefined.pattern);
+    opts.complexity = parseInt(opts.complexity);
+    opts.complexity = typeof opts.complexity === 'number' ? opts.complexity : 3;
+
+    var predefined = h.resolveComplexity(opts.complexity);
+    var separators = typeof opts.separators === 'string' ? opts.separators : predefined.separators;
+
+    rtn.pattern = opts.pattern || predefined.pattern;
     rtn.separator = separators.split('')[h.random(0, separators.length - 1)];
     if (predefined.transform) rtn.transform = predefined.transform;
 
@@ -54,6 +56,7 @@ var h = {
 
 
 module.exports = function (opts) {
+  opts = opts || {};
   o = h.processOpts(opts);
   var pattern = o.pattern.split('');
   var uppercase = (o.transform && o.transform == 'uppercase');
