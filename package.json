@@ -1,6 +1,6 @@
 {
   "name": "xkpasswd",
-  "version": "0.0.8",
+  "version": "0.0.9",
   "description": "Memorable password generator",
   "main": "index.js",
   "bin": {

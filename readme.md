@@ -80,6 +80,9 @@ gainsays+illumes+discontiguity+86
 
 ## Release notes
 
+v0.0.9
+- corrected shebang, works cross-platform now
+
 v0.0.8
 - using a simpler CLI parser
 - updated options syntax

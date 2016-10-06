@@ -1,4 +1,4 @@
-#! /usr/local/bin/node
+#!/usr/bin/env node
 var generate = require('./generate');
 var cliParser = require('clarg');
 
