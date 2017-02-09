@@ -102,10 +102,10 @@ v0.0.7
 - cleaned up a bit and made code slightly more modular and extensible
 
 
-## Issues and requests
+## Go version
 
-Please log your issues at https://github.com/vot/xkpasswd.js/issues
+I've also started writing a clone of this in Go: https://github.com/vot/xkpasswd-go
 
-You can also just go ahead and add a feature yourself, simply create a pull request.
+At the moment it doesn't take any options but make sure to check it out if you're after a self contained binary that returns you a password using a hardcoded pattern.
 
 <br>
