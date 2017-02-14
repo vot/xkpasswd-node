@@ -12,26 +12,26 @@ var h = {
 
   resolveComplexity: function (complexity) {
     // Patterns can consist of any combination of the following: (w)ords, (d)igits, (s)eparators
-    complexity = complexity || 3;
+    complexity = complexity || 2;
     var rtn = {};
-    rtn.separators = '#.-=+';
+    rtn.separators = '#.-=+_';
     if (complexity < 1) complexity = 1;
     if (complexity > 6) complexity = 6;
 
     if (complexity === 1) rtn.pattern = 'wsw';
-    if (complexity === 2) rtn.pattern = 'wswsdd';
+    if (complexity === 2) rtn.pattern = 'wswsw';
     if (complexity === 3) rtn.pattern = 'wswswsdd';
-    if (complexity === 4) rtn.pattern = 'swswswswswsdd';
+    if (complexity === 4) rtn.pattern = 'wswswswswsdd';
 
     if (complexity === 5) {
-      rtn.pattern = 'swswswswswsdd'
-      rtn.separators = '#!@$*+:|~?';
+      rtn.pattern = 'wswswswswsdd'
+      rtn.separators = '#.-=+_!$*:~?';
     };
 
     if (complexity === 6) {
       rtn.pattern = 'ddswswswswswsdd';
       rtn.transform = 'alternate';
-      rtn.separators = '!@$%^&*-_+=:|~?.;';
+      rtn.separators = '#.-=+_!$*:~?%^&;';
     }
 
     return rtn;
@@ -70,9 +70,9 @@ module.exports = function (opts) {
       value = h.getRandomWord();
       if (o.transform && o.transform == 'alternate') uppercase = !uppercase;
       if (uppercase) {
-        value.toUpperCase();
+        value = value.toUpperCase();
       } else {
-        value.toLowerCase();
+        value = value.toLowerCase();
       }
     }
 

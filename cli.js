@@ -19,11 +19,6 @@ if (typeof options.number !== 'number' || options.number < 1) {
   options.number = 1;
 }
 
-if (options.number === 1) {
-  console.log('Password:', generate(options));
-} else {
-  console.log('Passwords:\n---------------------------------');
-  for (i = 0; i < options.number; i++) {
-    console.log(generate(options));
-  }
+for (i = 0; i < options.number; i++) {
+  console.log(generate(options));
 }
