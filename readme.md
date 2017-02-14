@@ -130,6 +130,13 @@ In addition level 6 alternates upper and lower case between words.
 
 ## Release notes
 
+v1.0.0
+
+- updated complexity levels
+- fixed uppercase/lowercase transformation
+- cleaned up code and documentation
+
+
 v0.0.9
 
 - corrected shebang, works cross-platform now
