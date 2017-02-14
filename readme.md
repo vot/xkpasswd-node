@@ -34,7 +34,8 @@ addition#wheat#congress#manner#lonely#20
 
 ## Using as a command in terminal
 
-You can also use xkpasswd command in your terminal if you install the package globally.
+You can also use xkpasswd command in your terminal if you install the package
+globally (`npm install xkpasswd -g`).
 
 **CLI OPTIONS**
 
@@ -49,10 +50,10 @@ You can use it interchangeably with `xkpasswd` command.
 
 You can specify `complexity` argument in accordance with [complexity levels table](#complexity-levels). Defaults to 2.
 
-If specified `pattern` argument overrides the one derived from complexity level.
+If specified `pattern` argument overrides the [pattern](#patterns) derived from complexity level.
 
-If `separators` are provided they are used instead of the standard set (see complexity levels). One separator is used per password,
-picked randomly from the provided set.
+If `separators` are provided they are used instead of the standard set (see complexity levels).
+One separator is used per password, picked randomly from the provided set.
 
 Finally, to generate multiple passwords at once you can specify the desired
 amount with the `number` argument. Defaults to 1.
