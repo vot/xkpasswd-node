@@ -21,10 +21,10 @@ var h = {
     if (complexity === 1) rtn.pattern = 'wsw';
     if (complexity === 2) rtn.pattern = 'wswsw';
     if (complexity === 3) rtn.pattern = 'wswswsdd';
-    if (complexity === 4) rtn.pattern = 'wswswswswsdd';
+    if (complexity === 4) rtn.pattern = 'wswswswsdd';
 
     if (complexity === 5) {
-      rtn.pattern = 'wswswswswsdd'
+      rtn.pattern = 'wswswswswsdd';
       rtn.separators = '#.-=+_!$*:~?';
     };
 
