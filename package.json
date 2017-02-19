@@ -1,14 +1,21 @@
 {
   "name": "xkpasswd",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "Memorable password generator",
+  "keywords": [
+    "password",
+    "generator",
+    "memorable",
+    "xkp",
+    "xkpasswd",
+    "xkpassword",
+    "long",
+    "words"
+  ],
   "main": "index.js",
   "bin": {
     "xkp": "cli.js",
     "xkpasswd": "cli.js"
-  },
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",

@@ -131,6 +131,11 @@ In addition level 6 alternates upper and lower case between words.
 
 ## Release notes
 
+v1.0.1
+
+- Using a cleaned up list of words
+
+
 v1.0.0
 
 - updated complexity levels
