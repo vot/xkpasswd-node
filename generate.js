@@ -1,4 +1,4 @@
-var wordList = require('word-list-json');
+var wordList = require('./xkpasswd-words.json');
 
 // define helpers
 var h = {
