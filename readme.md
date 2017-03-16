@@ -40,11 +40,12 @@ globally (`npm install xkpasswd -g`).
 **CLI OPTIONS**
 
 ```
-xkpasswd --complexity <number> --separators <string> --pattern <string> --number <number>
+xkpasswd --complexity <number> --separators <string> --pattern <string> --transform <string> --number <number>
 ```
 
 *xkp* alias for this task is also defined for convenience.
 You can use it interchangeably with `xkpasswd` command.
+
 
 
 
@@ -54,6 +55,8 @@ If specified `pattern` argument overrides the [pattern](#patterns) derived from 
 
 If `separators` are provided they are used instead of the standard set (see complexity levels).
 One separator is used per password, picked randomly from the provided set.
+
+You can set `transform` to `alternate` or `uppcase` to trigger case transformation.
 
 Finally, to generate multiple passwords at once you can specify the desired
 amount with the `number` argument. Defaults to 1.
@@ -105,7 +108,7 @@ The first letters (**w**, **d** and **s** respectively) are used in pattern stri
 
 For example:
 
-* `w` will return a single word (i.e. `demographics`)
+* `w` will return a single word (i.e. `demographics`). Use `w` for lowercase and `W` for uppercase.
 * `wsd` will return a word and a digit, separated by one of the permitted separators (i.e. `storm#7`)
 * `wswsdd` will return two words followed by a two digit number, all with separators between (i.e. `delates+dissembled+16`)
 
