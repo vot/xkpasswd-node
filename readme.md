@@ -56,7 +56,7 @@ If specified `pattern` argument overrides the [pattern](#patterns) derived from 
 If `separators` are provided they are used instead of the standard set (see complexity levels).
 One separator is used per password, picked randomly from the provided set.
 
-You can set `transform` to `alternate` or `uppcase` to trigger case transformation.
+You can set `transform` to `alternate` or `uppercase` to trigger case transformation.
 
 Finally, to generate multiple passwords at once you can specify the desired
 amount with the `number` argument. Defaults to 1.
@@ -133,6 +133,11 @@ between words and expanded sets of separators.
 In addition level 6 alternates upper and lower case between words.
 
 ## Release notes
+
+v1.0.2
+
+- Added transform option
+
 
 v1.0.1
 
