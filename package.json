@@ -17,10 +17,7 @@
     "xkp": "cli.js",
     "xkpasswd": "cli.js"
   },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/vot/xkpasswd-node.git"
-  },
+  "repository": "https://github.com/vot/xkpasswd-node.git",
   "author": "Vot Z <http://vot-z.com>",
   "license": "ISC",
   "bugs": {
@@ -29,5 +26,16 @@
   "homepage": "https://github.com/vot/xkpasswd-node",
   "dependencies": {
     "clarg": "0.0.2"
+  },
+  "scripts": {
+    "test": "./node_modules/.bin/mocha --reporter spec",
+    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec"
+  },
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "eslint": "^3.18.0",
+    "istanbul": "^0.4.5",
+    "mocha": "^3.2.0",
+    "mocha-eslint": "^3.0.1"
   }
 }

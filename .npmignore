@@ -1,0 +1,6 @@
+.vscode/
+coverage/
+test/
+.eslintrc
+readme.md
+yarn.lock

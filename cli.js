@@ -19,6 +19,6 @@ if (typeof options.number !== 'number' || options.number < 1) {
   options.number = 1;
 }
 
-for (i = 0; i < options.number; i++) {
+for (var i = 0; i < options.number; i++) {
   console.log(generate(options));
 }
