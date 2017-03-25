@@ -26,7 +26,7 @@ var h = {
     if (complexity === 5) {
       rtn.pattern = 'wswswswswsdd';
       rtn.separators = '#.-=+_!$*:~?';
-    };
+    }
 
     if (complexity === 6) {
       rtn.pattern = 'ddswswswswswsdd';
@@ -57,7 +57,7 @@ var h = {
 
 module.exports = function (opts) {
   opts = opts || {};
-  o = h.processOpts(opts);
+  var o = h.processOpts(opts);
   var pattern = o.pattern.split('');
   var uppercase = (o.transform && o.transform == 'uppercase');
   var password = [];
