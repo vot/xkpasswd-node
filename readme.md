@@ -2,11 +2,13 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][npm-dl-img]][npm-url]
+[![Travis build][travis-img]][travis-url]
 
 [npm-url]: https://npmjs.org/package/xkpasswd
 [npm-img]: https://img.shields.io/npm/v/xkpasswd.svg
 [npm-dl-img]: https://img.shields.io/npm/dm/xkpasswd.svg
-
+[travis-img]: https://img.shields.io/travis/vot/xkpasswd-node.svg
+[travis-url]: https://travis-ci.org/vot/xkpasswd-node
 
 
 *Memorable password generator, inspired by a PERL module powering xkpasswd.net/s/*
