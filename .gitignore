@@ -1,5 +1,6 @@
 .vscode/
-coverage/
+.DS_Store
+coverage
 node_modules
 npm-debug.log
 yarn.lock
