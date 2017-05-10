@@ -31,8 +31,7 @@
     "clarg": "0.0.2"
   },
   "scripts": {
-    "test": "./node_modules/.bin/mocha --reporter spec",
-    "coverage": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha -- --reporter spec"
+    "test": "./node_modules/.bin/istanbul cover ./node_modules/.bin/_mocha"
   },
   "devDependencies": {
     "chai": "^3.5.0",
