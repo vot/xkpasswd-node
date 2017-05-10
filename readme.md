@@ -10,8 +10,8 @@
 [npm-dl-img]: https://img.shields.io/npm/dm/xkpasswd.svg
 [travis-img]: https://img.shields.io/travis/vot/xkpasswd-node.svg
 [travis-url]: https://travis-ci.org/vot/xkpasswd-node
-[coveralls-img]: https://img.shields.io/coveralls/vot/ffbinaries-node.svg
-[coveralls-url]: https://coveralls.io/github/vot/ffbinaries-node
+[coveralls-img]: https://img.shields.io/coveralls/vot/xkpasswd-node.svg
+[coveralls-url]: https://coveralls.io/github/vot/xkpasswd-node
 
 
 *Memorable password generator, inspired by a PERL module powering xkpasswd.net/s/*
