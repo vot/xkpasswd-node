@@ -139,9 +139,19 @@ In addition level 6 alternates upper and lower case between words.
 
 ## Release notes
 
+v1.0.4
+
+- Added Coveralls integration and badge
+
+
+v1.0.3
+
+- Added tests and linting (thanks @yogendra)
+
+
 v1.0.2
 
-- Added transform option
+- Added transform option (thanks @yogendra)
 
 
 v1.0.1
