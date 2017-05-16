@@ -48,7 +48,7 @@ globally (`npm install xkpasswd -g`).
 xkpasswd --complexity <number> --separators <string> --pattern <string> --transform <string> --number <number>
 ```
 
-*xkp* alias for this task is also defined for convenience.
+`xkp` alias for is also provided for convenience.
 You can use it interchangeably with `xkpasswd` command.
 
 
@@ -65,6 +65,10 @@ You can set `transform` to `alternate` or `uppercase` to trigger case transforma
 
 Finally, to generate multiple passwords at once you can specify the desired
 amount with the `number` argument. Defaults to 1.
+
+**Using hyphen (`-`) as a separator**
+Due to the way the arguments are parsed make sure to use equals sign instead of space
+if you'd like to use a hyphen (`-`) as your separator: `xkpasswd -s=-`.
 
 
 **EXAMPLE** Default behaviour
