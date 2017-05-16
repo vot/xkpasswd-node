@@ -51,8 +51,7 @@ xkpasswd --complexity <number> --separators <string> --pattern <string> --transf
 `xkp` alias for is also provided for convenience.
 You can use it interchangeably with `xkpasswd` command.
 
-
-
+<br />
 
 You can specify `complexity` argument in accordance with [complexity levels table](#complexity-levels). Defaults to 2.
 
@@ -66,10 +65,14 @@ You can set `transform` to `alternate` or `uppercase` to trigger case transforma
 Finally, to generate multiple passwords at once you can specify the desired
 amount with the `number` argument. Defaults to 1.
 
+<br />
+
 **Using hyphen (`-`) as a separator**
+
 Due to the way the arguments are parsed make sure to use equals sign instead of space
 if you'd like to use a hyphen (`-`) as your separator: `xkpasswd -s=-`.
 
+<br />
 
 **EXAMPLE** Default behaviour
 
@@ -185,3 +188,29 @@ v0.0.7
 
 - replaced random-words module with a more custom solution using word-list-json module
 - cleaned up a bit and made code slightly more modular and extensible
+
+v0.0.6
+
+- updated docs to include CLI options
+
+v0.0.5
+
+- added CLI options
+
+v0.0.4
+
+- corrected argument parsing logic
+- updated shebang (fix for Windows)
+
+v0.0.3
+
+- split library and CLI into separate files
+- registering `xkpasswd` command
+
+v0.0.2
+
+- changed symbols used in patterns to `w`, `d`, `s` (word, digit, separator)
+
+v0.0.1
+
+- prototype
