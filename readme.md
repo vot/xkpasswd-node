@@ -2,14 +2,14 @@
 
 [![NPM Version][npm-img]][npm-url]
 [![NPM Downloads][npm-dl-img]][npm-url]
-[![Travis build][travis-img]][travis-url]
+[![Build status][circle-img]][circle-url]
 [![Coveralls coverage][coveralls-img]][coveralls-url]
 
 [npm-url]: https://npmjs.org/package/xkpasswd
 [npm-img]: https://img.shields.io/npm/v/xkpasswd.svg
 [npm-dl-img]: https://img.shields.io/npm/dm/xkpasswd.svg
-[travis-img]: https://img.shields.io/travis/vot/xkpasswd-node.svg
-[travis-url]: https://travis-ci.org/vot/xkpasswd-node
+[circle-img]: https://img.shields.io/circleci/project/github/vot/xkpasswd-node/master.svg
+[circle-url]: https://circleci.com/gh/vot/xkpasswd-node/tree/master
 [coveralls-img]: https://img.shields.io/coveralls/vot/xkpasswd-node.svg
 [coveralls-url]: https://coveralls.io/github/vot/xkpasswd-node
 
